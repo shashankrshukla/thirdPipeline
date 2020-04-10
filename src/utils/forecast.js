@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.message) {
             callback('Unable to find location!', undefined)
         } else {
-            callback(undefined, body.weather[0].description + '. It is currently ' + body.main.temp + ' degrees and the pressure is ' + body.main.pressure + ' hPa')
+            callback(undefined, body.weather[0].description + '. It is currently ' + body.main.temp + ' degrees and the pressure is ' + body.main.pressure + ' hPa. Humidity is ' + body.main.humidity)
         }
     })
 }
