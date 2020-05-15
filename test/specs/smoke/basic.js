@@ -23,6 +23,8 @@ describe('Testing the title of the Weather Webpage', () => {
         const title = browser.getTitle()
         assert.strictEqual(title, 'Weather');
 
+        const title1 = browser.getTitle()
+        assert.strictEqual(title1, 'Weather');
     })
 })
 //end
